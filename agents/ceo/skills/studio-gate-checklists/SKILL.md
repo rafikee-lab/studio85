@@ -1,28 +1,28 @@
 ---
 name: studio-gate-checklists
-description: Użyj przed G1 i G3, dopóki studio nie ma agentów CFO, Compliance i Security — przejdź minimalne checklisty i dołącz wynik do Raportu bramki.
+description: Use before G1, G2 and G3 while the studio has no CFO, Compliance or Security agents — run the minimal checklists and attach the result to the Gate Report.
 ---
-# Uwaga
-Nie udzielasz porady prawnej ani finansowej. Wskazujesz ryzyka i braki; ryzyko WYSOKIE → Board z rekomendacją konsultacji z prawnikiem lub księgowym. Teza bez źródła = HIPOTEZA.
+# Note
+You do not give legal or financial advice. You point out risks and gaps; a HIGH risk goes to the Board with a recommendation to consult a lawyer or accountant. A claim without a source = HYPOTHESIS.
 
-# Przed G1
-- [ ] Kto płaci, ile, w jakim modelu; marża w wariancie pesymistycznym (−50% konwersji, +50% kosztu pozyskania)
-- [ ] Branża regulowana lub porady (prawne, finansowe, zdrowotne)?
-- [ ] Jakie dane osobowe; dane wrażliwe lub dzieci?
-- [ ] AI generuje treści lub decyzje dla użytkownika?
-- [ ] Dane z cudzych serwisów (regulamin, robots.txt, prawo do baz danych)?
-- [ ] Budżet walidacji
+# Before G1
+- [ ] Who pays, how much, in what model; margin in the pessimistic case (−50% conversion, +50% acquisition cost)
+- [ ] Regulated industry or advice (legal, financial, health)?
+- [ ] What personal data; sensitive data or children?
+- [ ] Does AI generate content or decisions for the user?
+- [ ] Data from third-party sites (terms of service, robots.txt, database rights)?
+- [ ] Validation budget
 
-# Przed G2 (strona testowa)
-- [ ] Formularz zapisu: informacja RODO, tylko e-mail, zgoda na kontakt
-- [ ] Analityka bez cookies lub z banerem zgody
-- [ ] Nazwa i domena: brak oczywistego konfliktu ze znakiem towarowym
+# Before G2 (landing test page)
+- [ ] Sign-up form: GDPR notice, email only, consent to contact
+- [ ] Analytics without cookies or with a consent banner
+- [ ] Name and domain: no obvious trademark conflict
 
-# Przed G3
-- [ ] Regulamin i polityka prywatności (szkic do akceptacji Board lub prawnika)
-- [ ] Cookies i zgody
-- [ ] Checklista bezpieczeństwa Engineer zielona
-- [ ] Koszty miesięczne produktu i próg wygaszenia
+# Before G3
+- [ ] Terms of service and privacy policy (draft for Board or lawyer approval)
+- [ ] Cookies and consents
+- [ ] Engineer's security checklist green
+- [ ] Monthly product costs and shutdown threshold
 
-# Wyjście
-Tabela: punkt | wynik | ryzyko N/Ś/W | działanie — w Raporcie bramki.
+# Output
+Table: item | result | risk L/M/H | action — in the Gate Report.

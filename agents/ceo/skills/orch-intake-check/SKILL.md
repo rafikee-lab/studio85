@@ -1,26 +1,26 @@
 ---
 name: orch-intake-check
-description: Użyj, gdy Board zgłasza nowy pomysł formularzem — sprawdź kompletność i konkretność, zanim pomysł trafi do Discovery.
+description: Use when the Board submits a new idea via the intake form — check completeness and specificity before the idea enters Discovery.
 ---
-# Cel
-Każdy pomysł wchodzi do studia z tym samym poziomem opisu. Luki mają być jawne, a nie domyślane.
+# Goal
+Every idea enters the studio with the same level of description. Gaps must be explicit, not guessed.
 
-# Wejście
-Wypełniony formularz zgłoszenia pomysłu (sekcje A–I).
+# Input
+A completed idea intake form (sections A–I).
 
-# Kroki
-1. Kompletność: każde pole wypełnione albo jawnie „nie wiem” z pewnością Z.
-2. Konkret: brak ogólników bez liczby lub przykładu („wszyscy”, „każdy”, „ogromny rynek”, „wiele firm”, „ludzie chcą”). Liczby co najmniej jako przedział.
-3. Problem (sekcja B) opisany jako konkretna historia, bez opisu rozwiązania.
-4. Sprzeczności między sekcjami (np. klient B2C, a płaci firma; MVP z 6 funkcjami).
-5. Sekcja H (ryzyka): każde pole tak / nie / nie wiem.
-6. Poziom pewności W/S/Z przy sekcjach B, C, D, F.
+# Steps
+1. Completeness: every field filled in, or explicitly "don't know" with confidence Z (guess).
+2. Specificity: no vague claims without a number or example ("everyone", "huge market", "many companies", "people want"). Numbers at least as a range.
+3. Problem (section B) told as a concrete story, with no description of the solution.
+4. Contradictions between sections (e.g. B2C customer but a company pays; an MVP with 6 features).
+5. Section H (risks): every field yes / no / don't know.
+6. Confidence level W/S/Z (Polish: Wiem / Szacuję / Zgaduję = know / estimate / guess) on sections B, C, D, F.
 
-# Wyjście
-- Wynik: ZALICZONY albo DO UZUPEŁNIENIA.
-- Przy DO UZUPEŁNIENIA: maksymalnie 5 pytań doprecyzowujących w jednym komentarzu, od najważniejszego.
-- Przy ZALICZONY: zadanie dla Analyst „ocena wstępna kartą oceny” przypięte do nowego projektu pomysłu.
+# Output
+- Result: PASSED or NEEDS INPUT.
+- NEEDS INPUT: at most 5 clarifying questions in one comment, most important first.
+- PASSED: a task for the Analyst "initial scorecard assessment", attached to a new project for the idea.
 
-# Zasady
-- Nie oceniasz, czy pomysł jest dobry — tylko czy opis wystarcza do analizy.
-- Nie uzupełniasz luk własnymi założeniami.
+# Rules
+- You do not judge whether the idea is good — only whether the description is enough to analyse it.
+- You do not fill gaps with your own assumptions.

@@ -1,19 +1,19 @@
 ---
 name: orch-board-digest
-description: Użyj codziennie (krótki digest) i w poniedziałki (raport tygodniowy), żeby Board w kilka minut wiedziała, co wymaga jej decyzji.
+description: Use daily (short digest) and on Mondays (weekly report) so the Board knows in a few minutes what needs its decision.
 ---
-# Codzienny digest (maks. 10 linii)
-1. Decyzje czekające na Board: co, rekomendacja, termin — od najpilniejszej.
-2. Alerty: budżet ≥ 80%, zadania stojące > 48 h, pętle, sygnały wczesnego ostrzegania.
-3. Co zostało dziś ukończone (tylko artefakty, bez opisu pracy).
-Jeśli nic nie wymaga decyzji — napisz to jednym zdaniem.
+# Daily digest (max 10 lines)
+1. Decisions waiting for the Board: what, recommendation, deadline — most urgent first.
+2. Alerts: budget ≥ 80%, tasks stalled > 48 h, loops, early-warning signals.
+3. What was completed today (artifacts only, no description of the work).
+If nothing needs a decision, say so in one sentence.
 
-# Raport tygodniowy (poniedziałek, maks. 1 strona)
-1. Portfel: każdy pomysł/produkt — etap, następna bramka, termin, status (zielony / żółty / czerwony).
-2. Koszty: wydatki tygodnia per agent i per projekt, porównanie z budżetem, top 3 najdroższe zadania.
-3. Ryzyka i blokery z właścicielami.
-4. Plan na kolejny tydzień: co ma być gotowe.
-5. Decyzje potrzebne od Board w tym tygodniu.
+# Weekly report (Monday, max 1 page)
+1. Portfolio: each idea/product — stage, next gate, deadline, status (green / yellow / red).
+2. Costs: spend this week per agent and per project, vs budget, top 3 most expensive tasks.
+3. Risks and blockers with owners.
+4. Plan for next week: what must be ready.
+5. Decisions needed from the Board this week.
 
-# Zasady
-Zwięźle. Liczby zamiast przymiotników. Żadnych opisów „nad czym pracowaliśmy” bez artefaktu.
+# Rules
+Brief. Numbers instead of adjectives. No "what we worked on" without an artifact. Write in Polish.

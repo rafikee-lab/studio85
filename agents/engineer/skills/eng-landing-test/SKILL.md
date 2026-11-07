@@ -1,14 +1,14 @@
 ---
 name: eng-landing-test
-description: Użyj po G1 = go, żeby zbudować prostą stronę testu popytu według planu testu od Analyst.
+description: Use after G1 = go to build a simple demand-test landing page according to the Analyst's test plan.
 ---
-# Zakres
-Jedna strona: nagłówek z obietnicą, 3 korzyści, wezwanie do działania, formularz (tylko e-mail + zgoda), prosta polityka prywatności, mierzenie odwiedzin i konwersji.
-# Kroki
-1. Weź treść i cel z planu testu (nie wymyślaj obietnicy).
-2. Zbuduj na szablonie studia; analityka bez cookies albo z banerem zgody.
-3. Zapisy trafiają do jednego miejsca dostępnego dla Board; nie wysyłaj nic automatycznie do zapisanych.
-4. Sprawdź: działa na telefonie, formularz zapisuje, licznik działa, ładowanie < 2 s.
-5. Raport: link do stagingu, co mierzymy, lista rzeczy do akceptacji Board (treść, domena, publikacja).
-# Zasady
-Publikacja i zakup domeny tylko po zgodzie Board. Maks. 1–2 dni pracy.
+# Scope
+One page: headline with the promise, 3 benefits, call to action, form (email + consent only), simple privacy policy, tracking of visits and conversion.
+# Steps
+1. Take the content and goal from the test plan (do not invent the promise).
+2. Build on the studio template; analytics without cookies or with a consent banner.
+3. Sign-ups go to one place the Board can access; send nothing automatically to people who sign up.
+4. Check: works on mobile, form saves, counter works, loads in < 2 s.
+5. Report: staging link, what we measure, list of items for Board approval (copy, domain, publishing).
+# Rules
+Publishing and buying a domain only after Board approval. Max 1–2 days of work. Page copy in the language of the test plan.

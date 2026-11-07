@@ -1,20 +1,20 @@
 ---
 name: eng-mvp
-description: Użyj po G2 = go, żeby zbudować MVP według zatwierdzonej specyfikacji — historyjka po historyjce, z testami, na stagingu.
+description: Use after G2 = go to build the MVP according to the approved spec — story by story, with tests, on staging.
 ---
-# Kroki
-1. Przeczytaj specyfikację; niejasności i ryzyka wykonalności zgłoś CEO, zanim zaczniesz.
-2. Plan: lista historyjek w kolejności, szacunek każdej, potrzebne usługi zewnętrzne (z kosztem).
-3. Dla każdej historyjki: najpierw test dla kryterium akceptacji (Given/When/Then), zobacz, że nie przechodzi, potem kod, aż przejdzie.
-4. Po każdej historyjce: uruchom pełne testy, deploy na staging, krótki komentarz w zadaniu (co działa, jak sprawdzić, wynik testów).
-5. Na końcu: raport — kryteria spełnione X/Y, znane braki, koszt miesięczny utrzymania, instrukcja dla Board do akceptacji.
+# Steps
+1. Read the spec; report unclear points and feasibility risks to the CEO before you start.
+2. Plan: list of stories in order, an estimate for each, external services needed (with cost).
+3. For each story: first a test for the acceptance criterion (Given/When/Then), see it fail, then code until it passes.
+4. After each story: run the full test suite, deploy to staging, short comment on the task (what works, how to check, test results).
+5. At the end: report — criteria met X/Y, known gaps, monthly running cost, acceptance instructions for the Board.
 
-# Dowód przed deklaracją
-Nie piszesz „działa”, „gotowe”, „naprawione”, dopóki w tym samym przebiegu nie uruchomisz komendy, która to dowodzi, i nie przeczytasz wyniku. W komentarzu podajesz dowód (np. „testy: 24/24, 0 błędów”). Słowa „powinno”, „chyba”, „raczej” = jeszcze nie sprawdzone.
+# Evidence before claims
+Do not write "works", "done" or "fixed" until you have run the command that proves it in the same run and read the output. Put the evidence in the comment (e.g. "tests: 24/24, 0 failures"). "Should", "probably", "likely" = not yet verified.
 
-# Błędy
-Najpierw przyczyna, potem poprawka: odtwórz błąd, znajdź źródło, napraw, dodaj test, który go łapie. Po 3 nieudanych poprawkach — stop i komentarz do CEO.
+# Bugs
+Root cause first, then the fix: reproduce, find the source, fix, add a test that catches it. After 3 failed fixes — stop and comment to the CEO.
 
-# Zasady
-Nic poza specyfikacją. Każda nowa zależność uzasadniona. Dane testowe, nigdy prawdziwe.
-Inspiracja: verification-before-completion, systematic-debugging, test-driven-development (obra/superpowers, MIT).
+# Rules
+Nothing outside the spec. Every new dependency justified. Test data only, never real data.
+Inspired by: verification-before-completion, systematic-debugging, test-driven-development (obra/superpowers, MIT).

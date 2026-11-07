@@ -1,30 +1,30 @@
 ---
 name: orch-phase-plan
-description: Użyj na starcie każdej fazy (Discovery, Walidacja, Budowa), żeby rozbić cel na małe zadania z właścicielami, budżetem i limitem przebiegów.
+description: Use at the start of each phase (Discovery, Validation, Build) to break the goal into small tasks with owners, budget and a run limit.
 ---
-# Wejście
-Decyzja Board z poprzedniej bramki (cel, budżet, termin) i artefakty z poprzedniej fazy.
+# Input
+The Board's decision from the previous gate (goal, budget, deadline) and the artifacts from the previous phase.
 
-# Artefakty wymagane na bramkach
-| Bramka | Artefakty | Właściciel → reviewer |
+# Artifacts required at each gate
+| Gate | Artifacts | Owner → reviewer |
 | --- | --- | --- |
-| G1 Warto testować? | Opportunity Brief z kartą oceny | Analyst → Red Team |
+| G1 Worth testing? | Opportunity Brief with scorecard | Analyst → Red Team |
 | | Red Team memo | Red Team → Board |
-| | Checklista G1 | CEO (`studio-gate-checklists`) → Board |
-| G2 Ktoś tego chce? | Plan testu popytu z progami (przed testem!) | Analyst → Red Team, zatwierdza Board |
-| | Strona testowa | Engineer → Board (publikacja za zgodą Board) |
-| | Wyniki testu + podsumowanie rozmów | Analyst → Red Team |
-| G3 Odpalamy? | Specyfikacja MVP | Analyst → Engineer (wykonalność), zatwierdza Board |
-| | MVP na stagingu + testy | Engineer → Board (akceptacja wg kryteriów) |
-| | Checklista startu (bezpieczeństwo, prawo, koszty) | Engineer + CEO → Board |
+| | G1 checklist | CEO (`studio-gate-checklists`) → Board |
+| G2 Does anyone want it? | Demand test plan with thresholds (set before the test!) | Analyst → Red Team, approved by Board |
+| | Landing test page | Engineer → Board (publishing needs Board approval) |
+| | Test results + interview summary | Analyst → Red Team |
+| G3 Launch? | MVP spec | Analyst → Engineer (feasibility), approved by Board |
+| | MVP on staging + tests | Engineer → Board (acceptance against criteria) |
+| | Launch checklist (security, legal, costs) | Engineer + CEO → Board |
 
-# Kroki
-1. Dla każdego artefaktu 1–3 zadania. Każde: właściciel, reviewer (inna rola), definicja „done”, projekt pomysłu, termin, limit 3 przebiegów, limit budżetu.
-2. Kolejność i zależności; równolegle maksymalnie 3 agentów.
-3. Budżet fazy rozpisany na zadania, 15% rezerwy.
+# Steps
+1. 1–3 tasks per artifact. Each has: owner, reviewer (a different role), definition of done, idea project, deadline, limit of 3 runs, budget limit.
+2. Order and dependencies; at most 3 agents working in parallel.
+3. Split the phase budget across tasks, keep a 15% reserve.
 
-# Wyjście
-Zadania w Paperclip + plan fazy w zadaniu nadrzędnym (cel, artefakty, kolejność, budżet, termin bramki).
+# Output
+Tasks in Paperclip + a phase plan in the parent task (goal, artifacts, order, budget, gate deadline).
 
-# Zasady
-Zadanie na więcej niż 2 przebiegi — dziel. Nie twórz zadań dla nieistniejących ról.
+# Rules
+A task that needs more than 2 runs — split it. Do not create tasks for roles that do not exist.

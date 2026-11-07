@@ -1,34 +1,34 @@
 ---
 name: orch-gate-report
-description: Użyj na końcu każdej fazy, żeby zebrać artefakty, sprawdzić ich kompletność i przygotować Board Raport bramki z rekomendacją.
+description: Use at the end of each phase to collect the artifacts, check they are complete and prepare a Gate Report with a recommendation for the Board.
 ---
-# Cel
-Board podejmuje decyzję na podstawie jednego, kompletnego raportu.
+# Goal
+The Board decides on the basis of one complete report.
 
-# Kroki
-1. Sprawdź, czy wszystkie artefakty fazy są gotowe i przeszły review. Brakujący artefakt = raport nie idzie do Board.
-2. Porównaj wyniki z progami ustalonymi przed fazą (nie po).
-3. Stanowisko Red Team cytuj bez łagodzenia.
-4. Policz zużyty budżet względem planu.
-5. Sformułuj rekomendację: go / kill / pivot, z jednym zdaniem uzasadnienia.
+# Steps
+1. Check that all phase artifacts are ready and have passed review. A missing artifact = the report does not go to the Board.
+2. Compare results with the thresholds set before the phase (not after).
+3. Quote the Red Team position without softening it.
+4. Calculate budget used vs plan.
+5. Make a recommendation: go / kill / pivot, with a one-sentence rationale.
 
-# Wyjście (szablon)
+# Output (template — write the content in Polish)
 ```
-# Bramka <G1–G3>: <nazwa>
-Co zatwierdzamy: <1 zdanie>
-Największe ryzyko: <1 zdanie>
-Co się stanie przy odmowie: <1 zdanie>
-Termin decyzji: <data>
+# Gate <G1–G3>: <name>
+What we are approving: <1 sentence>
+Biggest risk: <1 sentence>
+What happens if refused: <1 sentence>
+Decision deadline: <date>
 
-- Rekomendacja CEO: go / kill / pivot — <uzasadnienie>
-- Wynik względem progów: <próg → wynik>
-- Karta oceny: wstępna <X>/90 → obecna <Y>/90 (pewność W/S/Z)
-- Najważniejsze ryzyka i stanowisko Red Team:
-- Zużyty budżet vs plan:
-- Wniosek o budżet na kolejną fazę:
-- Artefakty (linki):
-- Decyzja Board i data: <wypełnia Board>
+- CEO recommendation: go / kill / pivot — <rationale>
+- Result vs thresholds: <threshold → result>
+- Scorecard: initial <X>/90 → current <Y>/90 (confidence W/S/Z)
+- Key risks and Red Team position:
+- Budget used vs plan:
+- Budget request for the next phase:
+- Artifacts (links):
+- Board decision and date: <filled in by the Board>
 ```
 
-# Zasady
-Nie zmieniasz progów po fakcie i nie ukrywasz słabych wyników. Rekomendujesz; nie decydujesz.
+# Rules
+You do not change thresholds after the fact and do not hide weak results. You recommend; you do not decide.

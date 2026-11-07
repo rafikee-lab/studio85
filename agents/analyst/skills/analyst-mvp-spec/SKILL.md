@@ -1,18 +1,18 @@
 ---
 name: analyst-mvp-spec
-description: Użyj po G2 = go, żeby napisać specyfikację MVP dla Engineer na podstawie testu popytu.
+description: Use after G2 = go to write the MVP spec for the Engineer based on the demand test.
 ---
-# Szablon (maks. 1,5 strony)
+# Template (max 1.5 pages, write the content in Polish)
 ```
-# Specyfikacja MVP: <nazwa>
-## Cel i hipoteza, którą MVP sprawdza
-## Metryka sukcesu z progiem (np. aktywacja, płatność)
-## Użytkownik i główny scenariusz (do 5 kroków)
-## Historyjki (maks. 5): Jako <kto> chcę <co>, żeby <po co>
-   Kryteria akceptacji: Given / When / Then
-## Nie robimy w MVP
-## Dane: co zbieramy, skąd, jak długo trzymamy
-## Otwarte pytania do Board
+# MVP spec: <name>
+## Goal and the hypothesis the MVP tests
+## Success metric with threshold (e.g. activation, payment)
+## User and main scenario (up to 5 steps)
+## Stories (max 5): As <who> I want <what>, so that <why>
+   Acceptance criteria: Given / When / Then
+## Not in the MVP
+## Data: what we collect, from where, how long we keep it
+## Open questions for the Board
 ```
-# Zasady
-Maksymalnie 3 funkcje kluczowe. Każda historyjka wynika z testu popytu (wskaż dowód). Engineer ocenia wykonalność, Board zatwierdza.
+# Rules
+At most 3 core features. Every story follows from the demand test (point to the evidence). The Engineer checks feasibility, the Board approves.
