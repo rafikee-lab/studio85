@@ -1,17 +1,17 @@
 ---
 name: orch-watchdog
-description: Użyj przy każdym przeglądzie pracy (heartbeat), żeby wyłapać blokery, pętle, zadania bez postępu i przekroczenia budżetu, zanim spalą tokeny.
+description: Use on every work review (heartbeat) to catch blockers, loops, stalled tasks and budget overruns before they burn tokens.
 ---
-# Co sprawdzasz
-1. **Budżet:** zadania, agenci, projekty i faza ≥ 80% budżetu → wstrzymaj nowe prace w tym zakresie i zgłoś Board.
-2. **Pętle:** zadanie z ≥ 3 przebiegami bez nowego artefaktu albo z powtarzanymi krokami → stop, krótka diagnoza, eskalacja.
-3. **Zastój:** zadanie bez postępu > 48 h → zapytaj właściciela o bloker; jeśli to zależność — przestaw kolejność; jeśli brak decyzji — wniosek do Board.
-4. **Odmowy i „nie wiem”:** doprecyzuj zadanie albo przekaż innemu agentowi lub modelowi; po drugiej próbie eskalacja. Zapisz przypadek.
-5. **Równoległość:** maksymalnie 3 agentów pracujących naraz; nadmiarowe zadania czekają w kolejce.
-6. **Porządek kosztów:** zadania bez projektu aplikacji — przypnij albo uzasadnij jako koszt wspólny.
+# What you check
+1. **Budget:** tasks, agents, projects and the phase at ≥ 80% of budget → pause new work in that scope and report to the Board.
+2. **Loops:** a task with ≥ 3 runs and no new artifact, or with repeated steps → stop, short diagnosis, escalate.
+3. **Stalls:** no progress for > 48 h → ask the owner about the blocker; if it is a dependency, reorder; if a decision is missing, request it from the Board.
+4. **Refusals and "don't know":** clarify the task or hand it to another agent or model; after the second attempt, escalate. Log the case.
+5. **Parallelism:** at most 3 agents working at once; extra tasks wait in the queue.
+6. **Cost hygiene:** tasks without an app project — attach them or justify them as a shared cost.
 
-# Wyjście
-Krótka lista działań (co zatrzymano, co przekazano, co eskalowano) dopisywana do codziennego digestu.
+# Output
+A short list of actions (what was stopped, handed over, escalated) appended to the daily digest.
 
-# Zasady
-Lepiej zatrzymać i zapytać niż pozwolić agentowi próbować dalej. Każda kolejna próba kosztuje.
+# Rules
+Better to stop and ask than to let an agent keep trying. Every extra attempt costs money.

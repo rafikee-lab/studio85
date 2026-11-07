@@ -1,35 +1,35 @@
 ---
 name: analyst-demand-test
-description: Użyj po G1 = go, żeby zaprojektować test popytu (progi przed testem), przygotować Board skrypt rozmów i podsumować wyniki przed G2.
+description: Use after G1 = go to design the demand test (thresholds before the test), prepare an interview script for the Board and summarise the results before G2.
 ---
-# 1. Plan testu (przed startem — zatwierdza Board)
-- Hipoteza w formie: „Co najmniej X% z <konkretna grupa> zrobi <konkretne działanie>”
-- Wybierz 1–2 eksperymenty, od najtańszego:
-  - strona testowa z zapisem (mierzy zainteresowanie)
-  - przedsprzedaż / zaliczka / „kup” prowadzące do listy oczekujących (mierzy gotowość do zapłaty)
-  - ręczna usługa dla 3–5 osób zamiast aplikacji (mierzy wartość)
-- Preferuj sygnały z „skórą w grze”: płatność, zaliczka, umówione spotkanie, przekazane dane. Sam zapis e-mail to słaby sygnał.
-- Własne dane ponad cudze: raport rynkowy nie zastępuje testu.
-- Ruch: skąd (grupy, społeczności, mały budżet reklamowy — kwota do zgody Board), ile odwiedzin minimum
-- Progi ustalone teraz: sukces ≥ X; kill < Y
-- Rozmowy: 5–10 osób z segmentu, gdzie je znajdziemy
+# 1. Test plan (before the start — approved by the Board)
+- Hypothesis in the form: "At least X% of <specific group> will <specific action>"
+- Pick 1–2 experiments, cheapest first:
+  - landing test page with sign-up (measures interest)
+  - pre-sale / deposit / "buy" leading to a waitlist (measures willingness to pay)
+  - manual service for 3–5 people instead of an app (measures value)
+- Prefer skin-in-the-game signals: payment, deposit, booked meeting, shared data. An email sign-up alone is a weak signal.
+- Own data over others' data: a market report does not replace a test.
+- Traffic: from where (groups, communities, a small ad budget — amount needs Board approval), minimum number of visits
+- Thresholds set now: success ≥ X; kill < Y
+- Interviews: 5–10 people from the segment, where to find them
 
-# 2. Skrypt rozmowy dla Board (15–20 min, zasady „The Mom Test”)
-Pytaj o przeszłe zachowania, nie o opinie i nie o pomysł. Nie prezentuj rozwiązania przed końcem.
-1. Rozgrzewka: rola, typowy dzień/tydzień.
-2. Ostatni raz, gdy mieli ten problem: co się stało, co zrobili, ile to trwało i kosztowało.
-3. Czego używają dziś i ile płacą; co próbowali i porzucili, dlaczego.
-4. Co by się stało, gdyby problem zniknął / gdyby obecne rozwiązanie przestało działać.
-5. Na końcu: krótki opis pomysłu i prośba o zobowiązanie (zostać pierwszym użytkownikiem, zaliczka, polecenie kogoś).
+# 2. Interview script for the Board (15–20 min, "The Mom Test" rules, in Polish)
+Ask about past behaviour, not opinions and not the idea. Do not pitch the solution before the end.
+1. Warm-up: role, a typical day/week.
+2. The last time they had this problem: what happened, what they did, how long it took and what it cost.
+3. What they use today and how much they pay; what they tried and dropped, and why.
+4. What would happen if the problem disappeared / if the current solution stopped working.
+5. At the end: a short description of the idea and a request for commitment (become an early user, deposit, referral).
 
-# 3. Notatka z każdej rozmowy (Board wkleja surowe notatki, Ty porządkujesz)
-Kto (rola, bez nazwiska) | zadanie, które próbuje wykonać | obecne rozwiązanie i koszt | ból 1–5 | cytaty | zobowiązanie: tak/nie/jakie | zaskoczenia.
+# 3. Note for each interview (the Board pastes raw notes, you structure them)
+Who (role, no name) | job they are trying to get done | current solution and cost | pain 1–5 | quotes | commitment: yes/no/what | surprises.
 
-# 4. Podsumowanie (przed G2)
-- Liczby: odwiedziny, zapisy, konwersja, zobowiązania — vs progi z planu
-- Rozmowy: powtarzające się bóle (cytaty), obecne rozwiązania i ceny, zaskoczenia
-- Wniosek: próg spełniony / niespełniony; co zmienić przy pivocie
+# 4. Summary (before G2)
+- Numbers: visits, sign-ups, conversion, commitments — vs thresholds from the plan
+- Interviews: recurring pains (quotes), current solutions and prices, surprises
+- Conclusion: threshold met / not met; what to change in a pivot
 
-# Zasady
-Progów nie zmieniasz po teście. Nie kontaktujesz się z ludźmi sam. Dane osobowe z rozmów — tylko zanonimizowane.
-Inspiracja: brainstorm-experiments-new, interview-script, summarize-interview (phuryn/pm-skills, MIT).
+# Rules
+Never change thresholds after the test. Do not contact people yourself. Personal data from interviews — anonymised only.
+Inspired by: brainstorm-experiments-new, interview-script, summarize-interview (phuryn/pm-skills, MIT).

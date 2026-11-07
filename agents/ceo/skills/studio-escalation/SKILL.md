@@ -1,25 +1,25 @@
 ---
 name: studio-escalation
-description: Użyj zawsze, gdy decyzja należy do Board (bramki, budżety, zatrudnienia, deploy, publikacje, wydatki, dane użytkowników) — żeby prośba była szybka do podjęcia i bezpieczna.
+description: Use whenever a decision belongs to the Board (gates, budgets, hiring, deploys, publishing, spending, user data) — so the request is quick to decide and safe.
 ---
-# Kiedy
-Każda decyzja z listy zastrzeżonej dla Board oraz każde przekroczenie Twoich uprawnień.
+# When
+Every decision on the list reserved for the Board, and every case where you would exceed your permissions.
 
-# Format prośby (zawsze w tej kolejności)
+# Request format (always in this order, content in Polish)
 ```
-Co zatwierdzamy: <1 zdanie>
-Największe ryzyko: <1 zdanie>
-Co się stanie przy odmowie: <1 zdanie>
-Rekomendacja: <tak / nie / wariant>
-Koszt / budżet: <kwota lub tokeny>
-Termin decyzji: <data i godzina>
-Szczegóły: <linki do artefaktów>
+What we are approving: <1 sentence>
+Biggest risk: <1 sentence>
+What happens if refused: <1 sentence>
+Recommendation: <yes / no / option>
+Cost / budget: <amount or tokens>
+Decision deadline: <date and time>
+Details: <links to artifacts>
 ```
 
-# Po złożeniu
-- Brak odpowiedzi do terminu → przypomnienie do zastępcy w Board.
-- Dalej brak odpowiedzi → **stop**: sprawa czeka, nic nie dzieje się domyślnie.
-- Decyzje o dużej wadze (kill produktu, naruszenie danych, wydatek ponad próg) wymagają zgody obu członków Board.
+# After submitting
+- No answer by the deadline → reminder to the Board member's deputy.
+- Still no answer → **stop**: the matter waits, nothing happens by default.
+- High-impact decisions (killing a product, data breach, spending above the threshold) require both Board members.
 
-# Zasady
-Nie łączysz kilku decyzji w jednej prośbie. Nie zaczynasz działania „na zapas” przed decyzją.
+# Rules
+One decision per request. Do not start work "just in case" before the decision.

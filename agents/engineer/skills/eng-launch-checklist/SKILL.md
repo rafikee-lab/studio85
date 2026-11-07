@@ -1,18 +1,18 @@
 ---
 name: eng-launch-checklist
-description: Użyj przed G3, żeby sprawdzić minimum bezpieczeństwa i gotowości produkcyjnej MVP.
+description: Use before G3 to check the MVP's minimum security and production readiness.
 ---
-# Checklista
-- [ ] Brak sekretów w repo (skan), sekrety w menedżerze sekretów
-- [ ] Skan zależności bez podatności krytycznych; wersje przypięte
-- [ ] Logowanie i uprawnienia z gotowej usługi; użytkownik widzi tylko swoje dane
-- [ ] Walidacja wejścia, ochrona przed typowymi atakami (OWASP Top 10), limity zapytań na formularzach
-- [ ] HTTPS, nagłówki bezpieczeństwa
-- [ ] Osobne środowiska i klucze dla staging i produkcji
-- [ ] Logi bez danych osobowych i sekretów
-- [ ] Kopia zapasowa bazy + jedno próbne odtworzenie
-- [ ] Monitoring: czy strona działa, alert do Board
-- [ ] Koszt miesięczny infrastruktury i usług
-- [ ] Jeśli produkt używa AI wobec użytkownika: oznaczenie i ochrona przed prompt injection w danych użytkownika
-# Wyjście
-Tabela: punkt | OK / brak | działanie. Każdy „brak” = zadanie albo świadoma decyzja Board.
+# Checklist
+- [ ] No secrets in the repo (scan), secrets in the secret manager
+- [ ] Dependency scan with no critical vulnerabilities; versions pinned
+- [ ] Auth and permissions from a ready-made service; users see only their own data
+- [ ] Input validation, protection against common attacks (OWASP Top 10), rate limits on forms
+- [ ] HTTPS, security headers
+- [ ] Separate environments and keys for staging and production
+- [ ] Logs free of personal data and secrets
+- [ ] Database backup + one test restore
+- [ ] Monitoring: is the site up, alert to the Board
+- [ ] Monthly cost of infrastructure and services
+- [ ] If the product uses AI with users: labelling and protection against prompt injection in user data
+# Output
+Table: item | OK / gap | action. Every "gap" = a task or a conscious Board decision.

@@ -1,27 +1,27 @@
 ---
 name: analyst-opportunity-brief
-description: Użyj w Discovery, żeby przygotować Opportunity Brief do bramki G1 „Warto testować?”.
+description: Use in Discovery to prepare the Opportunity Brief for gate G1 "Worth testing?".
 ---
-# Szablon (maks. 2 strony)
+# Template (max 2 pages, write the content in Polish)
 ```
-# Opportunity Brief: <nazwa>
-## 3 kluczowe wnioski (bez werdyktu go/kill)
-## Problem i klient: konkretna osoba (rola, sytuacja), jak często, ile kosztuje ją problem dziś
-## Jak radzą sobie dziś: obecne obejście i jego koszt (czas, pieniądze)
-## Rynek: wielkość (przedział + metoda liczenia + źródła)
-## Konkurencja: nazwa | link | cena | mocne | słabe | luka
-## Kanały dotarcia: top 3 do testu, szacowany koszt pozyskania
-## Ekonomia (uproszczona): cena, koszt obsługi klienta/mies., marża, wariant pesymistyczny
-## Nazwa i domena: 3 propozycje z wolną domeną .pl/.com, brak oczywistego konfliktu ze znakiem towarowym (HIPOTEZA, jeśli nie sprawdzono w bazie)
-## Ryzykowne założenia: założenie | kategoria | pewność W/S/Z | wpływ N/Ś/W | jak sprawdzić
-## Hipotezy do testu popytu (z założeń o wysokim wpływie i niskiej pewności): hipoteza | metoda | próg sukcesu | próg kill
-## Karta oceny: wynik końcowy vs wstępny
-## Źródła
+# Opportunity Brief: <name>
+## 3 key findings (no go/kill verdict)
+## Problem and customer: a specific person (role, situation), how often, what the problem costs them today
+## How they cope today: current workaround and its cost (time, money)
+## Market: size (range + calculation method + sources)
+## Competition: name | link | price | strengths | weaknesses | gap
+## Acquisition channels: top 3 to test, estimated acquisition cost
+## Economics (simplified): price, cost to serve a customer/month, margin, pessimistic case
+## Name and domain: 3 options with a free .pl/.com domain, no obvious trademark conflict (HYPOTHESIS if not checked in a registry)
+## Risky assumptions: assumption | category | confidence W/S/Z | impact L/M/H | how to test
+## Demand test hypotheses (from high-impact, low-confidence assumptions): hypothesis | method | success threshold | kill threshold
+## Scorecard: final vs initial
+## Sources
 ```
-# Ryzykowne założenia — 8 kategorii
-Przejrzyj każdą: **Wartość** (czy rozwiązuje problem, czy wrócą), **Użyteczność** (czy zrozumieją bez pomocy), **Opłacalność** (czy zapłacą, czy obsługa się spina, zgodność z prawem), **Wykonalność** (czy zbudujemy szybko i tanio), **Etyka** (czy może komuś zaszkodzić), **Dotarcie** (czy mamy kanał i komunikat), **Strategia** (czy łatwo skopiować, czy duży gracz wejdzie), **Zespół** (czy mamy wiedzę i czas).
-Priorytet: wysoki wpływ + niska pewność → test popytu; wysoki wpływ + wysoka pewność → przyjmij; niski wpływ + wysokie ryzyko → powód do kill; reszta → odłóż.
+# Risky assumptions — 8 categories
+Go through each: **Value** (does it solve the problem, will they come back), **Usability** (will they get it without help), **Viability** (will they pay, does support add up, legal compliance), **Feasibility** (can we build it fast and cheap), **Ethics** (can it harm anyone), **Go-to-market** (do we have a channel and message), **Strategy** (easy to copy, will a big player enter), **Team** (do we have the know-how and time).
+Priority: high impact + low confidence → demand test; high impact + high confidence → accept; low impact + high risk → reason to kill; the rest → park.
 
-# Zasady
-Dowody przeciw pomysłowi równie widoczne jak za. Brief idzie do Red Team przed Board.
-Inspiracja: identify-assumptions-new, prioritize-assumptions (phuryn/pm-skills, MIT).
+# Rules
+Evidence against the idea as visible as evidence for it. The brief goes to the Red Team before the Board.
+Inspired by: identify-assumptions-new, prioritize-assumptions (phuryn/pm-skills, MIT).
